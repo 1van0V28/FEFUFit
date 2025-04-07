@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace = "com.example.fefufit"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.fefufit"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.material.v190)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FEFUFit</string>
+
+    <string name="title_welcome">Пожалуй, лучший фитнес трекер в ДВФУ</string>
+    <string name="subtitle_welcome">Созданный студентами ПИКД</string>
+
+    <string name="link_welcome">Уже есть аккаунт?</string>
+
+    <string name="btn_sign_up">Зарегистрироваться</string>
+
+    <string name="decription_ic_welcome_bicycles">Велосипеды</string>
 </resources>
