@@ -12,13 +12,14 @@ class WelcomeActivity : AppCompatActivity() {
 
     private fun setButtonsOnClickListeners() {
         val intentRegistration = Intent(this@WelcomeActivity, RegistrationActivity::class.java)
+        val intentLogin = Intent(this@WelcomeActivity, LoginActivity::class.java)
 
         with(binding) {
             btnRegistration.setOnClickListener {
                 startActivity(intentRegistration)
             }
             btnLogin.setOnClickListener {
-                TODO("Add a transition to ActivityLogin using an intentLogin")
+                startActivity(intentLogin)
             }
         }
     }
