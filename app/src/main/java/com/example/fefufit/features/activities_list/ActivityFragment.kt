@@ -1,10 +1,12 @@
-package com.example.fefufit
+package com.example.fefufit.features.activities_list
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.fefufit.R
+import com.example.fefufit.ui.TabPagerAdapter
 import com.example.fefufit.databinding.FragmentActivityBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

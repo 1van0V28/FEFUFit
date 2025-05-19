@@ -1,9 +1,12 @@
-package com.example.fefufit
+package com.example.fefufit.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
+import com.example.fefufit.R
 import com.example.fefufit.databinding.ActivityActivityBinding
+import com.example.fefufit.features.activities_list.ActivityFragment
+import com.example.fefufit.features.profile.ProfileFragment
 
 object ActivityFragmentsTags {
     const val ACTIVITY_FRAGMENT = "ActivityFragment"
@@ -27,7 +30,10 @@ class ActivityActivity: AppCompatActivity() {
             if (profileFragment != null) {
                 show(profileFragment)
             } else {
-                add(R.id.fragmentContainerView, ProfileFragment(), ActivityFragmentsTags.PROFILE_FRAGMENT)
+                add(
+                    R.id.fragmentContainerView, ProfileFragment(),
+                    ActivityFragmentsTags.PROFILE_FRAGMENT
+                )
             }
         }
     }
@@ -44,7 +50,10 @@ class ActivityActivity: AppCompatActivity() {
             if (activityFragment != null) {
                 show(activityFragment)
             } else {
-                add(R.id.fragmentContainerView, ActivityFragment(), ActivityFragmentsTags.ACTIVITY_FRAGMENT)
+                add(
+                    R.id.fragmentContainerView, ActivityFragment(),
+                    ActivityFragmentsTags.ACTIVITY_FRAGMENT
+                )
             }
         }
     }
@@ -53,7 +62,10 @@ class ActivityActivity: AppCompatActivity() {
         with(binding) {
             if (savedInstanceState == null) {
                 supportFragmentManager.beginTransaction()
-                    .add(R.id.fragmentContainerView,  ActivityFragment(), ActivityFragmentsTags.ACTIVITY_FRAGMENT)
+                    .add(
+                        R.id.fragmentContainerView,  ActivityFragment(),
+                        ActivityFragmentsTags.ACTIVITY_FRAGMENT
+                    )
                     .commit()
             }
 
