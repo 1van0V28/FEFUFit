@@ -1,16 +1,20 @@
-package com.example.fefufit.features.activities_list
+package com.example.fefufit.features.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.fefufit.databinding.FragmentActivityDetailsBinding
+import com.example.fefufit.databinding.FragmentPasswordChangeBinding
 
-abstract class ActivityDetailsFragment: Fragment() {
-    private var _binding: FragmentActivityDetailsBinding? = null
-    protected val binding
-        get() = _binding ?: throw IllegalStateException("FragmentActivityDetailsBinding is null")
+class PasswordChangeFragment: Fragment() {
+    private var _binding: FragmentPasswordChangeBinding? = null
+    private val binding
+        get() = _binding ?: throw IllegalStateException("FragmentPasswordChangeBinding is null")
+
+    companion object {
+        const val FRAGMENT_TAG = "PasswordChangeFragment"
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,7 +23,7 @@ abstract class ActivityDetailsFragment: Fragment() {
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
 
-        _binding = FragmentActivityDetailsBinding.inflate(inflater, container, false)
+        _binding = FragmentPasswordChangeBinding.inflate(inflater, container, false)
 
         return binding.root
     }

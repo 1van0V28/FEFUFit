@@ -8,7 +8,7 @@ import com.example.fefufit.databinding.ItemActivityEntryBinding
 import com.example.fefufit.databinding.ItemDateHeaderBinding
 
 class ActivityAdapter(
-    public val isMy: Boolean,
+    val isMy: Boolean,
     private val items: List<ActivityItem>,
     private val onActivityClick: () -> Unit
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {

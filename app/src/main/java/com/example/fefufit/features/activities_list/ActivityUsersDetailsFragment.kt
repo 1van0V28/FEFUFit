@@ -8,7 +8,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import com.example.fefufit.R
 import com.google.android.material.textfield.TextInputLayout
-import com.google.android.material.textfield.TextInputLayout.BoxBackgroundMode
 
 class ActivityUsersDetailsFragment: ActivityDetailsFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,7 +30,7 @@ class ActivityUsersDetailsFragment: ActivityDetailsFragment() {
             tfComment.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
             tfComment.minLines = 1
             tfComment.maxLines = 5
-            tfComment.setText("ЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбалсяЗадолбался")
+            tfComment.setText("Ладно, и так сойдёт...")
             tfComment.setTextColor(ContextCompat.getColor(requireContext(), R.color.text_grey))
             tfComment.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.background_text_input_grey))
         }
