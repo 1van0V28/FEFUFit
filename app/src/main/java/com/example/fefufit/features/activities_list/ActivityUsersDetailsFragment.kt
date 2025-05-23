@@ -14,9 +14,9 @@ class ActivityUsersDetailsFragment: ActivityDetailsFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         with (super.binding) {
-            ivDelete.isVisible = false
+            icDelete.isVisible = false
 
-            ivShare.isVisible = false
+            icShare.isVisible = false
 
             tvUser.paintFlags = Paint.UNDERLINE_TEXT_FLAG
 
@@ -30,7 +30,6 @@ class ActivityUsersDetailsFragment: ActivityDetailsFragment() {
             tfComment.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
             tfComment.minLines = 1
             tfComment.maxLines = 5
-            tfComment.setText("Ладно, и так сойдёт...")
             tfComment.setTextColor(ContextCompat.getColor(requireContext(), R.color.text_grey))
             tfComment.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.background_text_input_grey))
         }

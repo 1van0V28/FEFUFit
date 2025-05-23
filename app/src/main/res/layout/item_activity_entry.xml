@@ -45,7 +45,7 @@
 
         <TextView
             style="@style/TextAdditionalParameterStyle"
-            android:id="@+id/tvTimeOver"
+            android:id="@+id/tvTimeFinishAgo"
             android:text="14 часов назад"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
