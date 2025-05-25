@@ -15,6 +15,7 @@ import com.example.fefufit.databinding.ActivityActivityNewBinding
 import com.example.fefufit.ui.ActivityViewModel
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import java.time.LocalDateTime
+import kotlin.random.Random
 
 class ActivityActivityNew: AppCompatActivity() {
     private var _binding: ActivityActivityNewBinding? = null
@@ -88,9 +89,9 @@ class ActivityActivityNew: AppCompatActivity() {
 
                 _activityViewModel.addActivity(UserActivity(
                     type = _bottomSheetAdapter.getActivityType(),
-                    startTime = LocalDateTime.now().minusHours(3),
+                    startTime = LocalDateTime.now().minusHours(Random.nextInt(1, 23).toLong()),
                     endTime = LocalDateTime.now(),
-                    distance = 777
+                    distance = Random.nextInt(1, 20000)
                 ))
 
                 llBottomSheet.post {
